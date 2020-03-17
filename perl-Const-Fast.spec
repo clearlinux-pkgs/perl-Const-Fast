@@ -4,7 +4,7 @@
 #
 Name     : perl-Const-Fast
 Version  : 0.014
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/L/LE/LEONT/Const-Fast-0.014.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/L/LE/LEONT/Const-Fast-0.014.tar.gz
 Summary  : 'Facility for creating read-only scalars, arrays, and hashes'
@@ -94,4 +94,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Const/Fast.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Const/Fast.pm
