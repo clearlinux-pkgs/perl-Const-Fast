@@ -4,7 +4,7 @@
 #
 Name     : perl-Const-Fast
 Version  : 0.9929
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/L/LE/LEONT/version-0.9929.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/L/LE/LEONT/version-0.9929.tar.gz
 Summary  : 'Structured version objects'
