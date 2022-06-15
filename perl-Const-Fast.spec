@@ -4,7 +4,7 @@
 #
 Name     : perl-Const-Fast
 Version  : 0.9929
-Release  : 13
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/L/LE/LEONT/version-0.9929.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/L/LE/LEONT/version-0.9929.tar.gz
 Summary  : 'Structured version objects'
@@ -18,6 +18,16 @@ version 0.9929
 ==================================
 Object oriented versions for all Perl releases from 5.6.2 onward.  Replaces
 the core version code for all Perl releases from 5.10.0 onwards.
+
+%package dev
+Summary: dev components for the perl-Const-Fast package.
+Group: Development
+Provides: perl-Const-Fast-devel = %{version}-%{release}
+Requires: perl-Const-Fast = %{version}-%{release}
+
+%description dev
+dev components for the perl-Const-Fast package.
+
 
 %package perl
 Summary: perl components for the perl-Const-Fast package.
@@ -63,12 +73,14 @@ find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
 find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %{_fixperms} %{buildroot}/*
-## Remove excluded files
-rm -f %{buildroot}*/usr/share/man/man3/version.3
-rm -f %{buildroot}*/usr/share/man/man3/version::Internals.3
 
 %files
 %defattr(-,root,root,-)
+
+%files dev
+%defattr(-,root,root,-)
+/usr/share/man/man3/version.3
+/usr/share/man/man3/version::Internals.3
 
 %files perl
 %defattr(-,root,root,-)
