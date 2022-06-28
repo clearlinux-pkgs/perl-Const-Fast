@@ -4,7 +4,7 @@
 #
 Name     : perl-Const-Fast
 Version  : 0.014
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/L/LE/LEONT/Const-Fast-0.014.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/L/LE/LEONT/Const-Fast-0.014.tar.gz
 Summary  : 'Facility for creating read-only scalars, arrays, and hashes'
